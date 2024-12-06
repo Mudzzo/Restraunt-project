@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+  padding: 0 2rem; }
+
+::selection {
+  background-color: #534930;
+  color: #f7f7f7; }
+
+.swiper {
+  width: 100%;
+  padding-block: 2.4rem; }
+  .swiper-wrapper {
+    transition-timing-function: linear !important; }
+  .swiper-slide {
+    display: flex;
+    width: auto;
+    padding-inline: 4rem; }
+  .swiper-logo {
+    max-width: 18rem;
+    height: auto;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
+    .swiper-logo:hover {
+      opacity: 1;
+      transform: scale(1.1); }
+
+.featured-brands {
+  padding-block: 6.4rem; }
