@@ -1,0 +1,39 @@
+.service {
+  height: 100%;
+  background-color: $color-grey-light;
+  border-radius: 1rem;
+  padding: 3.6rem 3rem;
+
+  &__title {
+    font-size: 2rem;
+    color: $color-secondary;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: $color-black;
+    margin-bottom: 1.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-tertiary-gray;
+      font-weight: 600;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+
+    &-text {
+      margin-right: 0.6rem;
+      transition: margin 0.3s ease-in-out;
+    }
+
+    &:hover {
+      & .service__link-text {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}
