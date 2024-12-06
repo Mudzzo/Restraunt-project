@@ -1,0 +1,26 @@
+{
+  "name": "Featured-Brands",
+  "version": "1.0.0",
+  "description": "featured brand",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass assets/Sass/main.scss assets/Css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/Sass/main.scss assets/Css/style.comp.css",
+    "concat:css": "concat -o assets/Css/style.concat.css assets/Css/libs/swiper/swiper-bundle.min.css assets/Css/style.comp.css",
+    "prefex:css": "postcss --use autoprefixer -b 'last 10 versions' assets/Css/style.concat.css -o assets/Css/style.prefix.css",
+    "compress:css": "node-sass assets/Css/style.prefix.css assets/Css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefex:css compress:css"
+  },
+  "author": "mahmoud",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0"
+  }
+}
