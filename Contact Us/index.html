@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resturants</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Welcome to our Contact Us page! Get in touch with us to book your table or find our location. Explore our contact details and full address along with an accurate map to our restaurant."
+    />
+    <title>Contact Us | Restaurant</title>
+
+    <!-- Font Faces -->
+    <link rel="stylesheet" href="./assets/Css/libs/font-awesome/all.min.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./assets/Css/style.css" />
+  </head>
+  <body>
+    <section class="contact-section">
+      <div class="header-page text-center">
+        <h1 class="heading__primary u-heading-compressed mb-4 mb-md-5">
+          Contact Us
+        </h1>
+        <a href="#" class="btn">Home / Contact Us</a>
+      </div>
+
+      <div class="text-center col-10 col-md-6 mx-auto mb-5 p-5">
+        <h2 class="heading__secondary u-heading-compressed">Get In Touch</h2>
+        <p class="sub__heading">
+          Feel free to reach out if you need more information. We're here to
+          help and to happy to provide any assistance you require.
+        </p>
+      </div>
+      <div class="map-container mt-5">
+        <div class="map-overlay"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.921127789743!2d-122.08424968424696!3d37.42206597982402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24b4d14efb5%3A0x5bb68c02ff9edc8c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614113777891!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center shadow-sm contact-info"
+        >
+          <div class="contact-info__item">
+            <i class="fa-solid fa-location-dot contact-info__icon"></i>
+            <h4 class="contact-info__title mb-3">Office Address</h4>
+            <p class="contact-info__text mb-5">
+              4140 Parker Rd. Allentown, New Maxico 31134
+            </p>
+          </div>
+          <div class="contact-info__item">
+            <i class="fa fa-phone contact-info__icon"></i>
+            <h4 class="contact-info__title mb-3">Phone Number</h4>
+            <p class="contact-info__text mb-0">+99 12345 67890</p>
+            <p class="contact-info__text mb-5 mb-md-0">+99 12345 67890</p>
+          </div>
+          <div class="contact-info__item">
+            <i class="fa fa-envelope contact-info__icon"></i>
+            <h4 class="contact-info__title mb-3">Email Address</h4>
+            <p class="contact-info__text mb-0">testing123@example.com</p>
+            <p class="contact-info__text mb-0">testing321@example.com</p>
+          </div>
+        </div>
+
+        <div class="cta row justify-content-between">
+          <form class="cta__form col-lg-7 rounded order-3 order-lg-0">
+            <h4 class="cta__title u-heading-compressed">Send A Message</h4>
+            <p class="cta__text sub__heading mb-5">
+              Drop Us a Line: Feel free to send us a message with any inquiries,
+              comments, or feedback. We're here and eager assist you.
+            </p>
+            <div class="row">
+              <div class="col-12 col-sm-6 mb-4">
+                <input
+                  type="text"
+                  class="cta__input w-100"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-6 mb-4">
+                <input
+                  type="text"
+                  class="cta__input w-100"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-6 mb-4">
+                <input
+                  type="email"
+                  class="cta__input w-100"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-6 mb-4">
+                <input
+                  type="text"
+                  class="cta__input w-100"
+                  placeholder="Company Name"
+                  required
+                />
+              </div>
+              <div class="col-12 mb-5">
+                <textarea
+                  type="text"
+                  class="cta__input w-100"
+                  placeholder="Comment"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn cta__btn">
+              <i
+                class="fa-solid fa-arrow-right rounded-circle cta__btn-icon"
+              ></i>
+              <span class="cta__btn-text">Book Table</span>
+            </button>
+          </form>
+          <div class="col-lg-5 rounded cta__photo-box order-1 order-lg-0">
+            <img
+              class="cta__photo w-100 h-100"
+              src="./assets/images/cta-img.PNG"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer"></footer>
+  </body>
 </html>

@@ -1,0 +1,89 @@
+.cta {
+  padding-block: 4.2rem;
+
+  @media screen and (max-width: 62em) {
+    padding-inline: 2.4rem;
+  }
+
+  &__form {
+    padding: 3.6rem 2.4rem;
+    background-color: $color-grey-light;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: $color-tertiary-gray;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    padding: 1.8rem 4.2rem;
+    border: none;
+    border-radius: 0.4rem;
+
+    &:focus {
+      outline-color: $color-primary;
+    }
+
+    &::placeholder {
+      color: $color-tertiary-gray;
+    }
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 10rem;
+    padding: 1.6rem 2.8rem;
+    position: relative;
+
+    &-icon {
+      height: 85%;
+      color: $color-secondary;
+      background-color: $color-white;
+      padding: 1.8rem;
+
+      position: absolute;
+      top: 50%;
+      left: 0.6rem;
+      transform: translate(0, -50%);
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    &-text {
+      margin-left: 4.2rem;
+      transition: margin 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-secondary-dark;
+
+      .cta__btn-text {
+        margin: 0 4.2rem 0 0;
+      }
+
+      .cta__btn-icon {
+        color: $color-secondary-dark;
+        transform: translate(13.5rem, -50%);
+      }
+    }
+  }
+
+  &__photo-box {
+    padding-left: 1.6rem;
+
+    @media screen and (max-width: 62em) {
+      height: 40rem;
+      padding-inline: 0;
+    }
+  }
+
+  &__photo {
+    object-fit: cover;
+  }
+}

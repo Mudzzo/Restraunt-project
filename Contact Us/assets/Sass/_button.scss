@@ -1,0 +1,19 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    background-color: $color-secondary;
+    color: $color-grey-light;
+    padding: 0.6rem 2.6rem;
+
+    @media screen and (max-width: 49em) {
+      font-size: $default-font-size;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-secondary-dark;
+  }
+}
