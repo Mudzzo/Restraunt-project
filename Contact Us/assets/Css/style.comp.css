@@ -1,4 +1,3 @@
-@import url(../Css/libs/bootstrap/bootstrap.min.css);
 .heading__primary {
   font-size: 5.2rem;
   font-weight: 500;
@@ -19,6 +18,25 @@
 
 .u-heading-compressed {
   transform: scaleY(0.89); }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out; }
+
+.animate--right {
+  transform: translateX(100px); }
+
+.animate--left {
+  transform: translateX(-100px); }
+
+.animate--bottom {
+  transform: translateY(100px); }
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0); }
 
 html {
   font-size: 62.5%; }
