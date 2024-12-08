@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resturants</title>
-  <link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
-  rel="stylesheet">
-  <link rel="stylesheet" href="assets/Css/libs/all.min.css">
-  <link rel="stylesheet" href="assets/Css/libs/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/Css/main.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturants</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/Css/libs/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="assets/Css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Sass/main.css">
+
 </head>
+
 <body>
-  
+    <!-- Start Table Reservation Section  -->
+    <section class="table-reservation position-relative">
+        <div class="container">
+            <img src="assets/images/plate-icon-07.svg" alt="plate-icon">
+            <div class="order d-flex align-items-center justify-content-center flex-column">
+                <h6>
+                    Place Your Order Online
+                </h6>
+                <h3>
+                    Enjoy a 10% Discount on Your First Order
+                </h3>
+                <p>
+                    Place your meal order online today and enjoy a special 10% discount on your first purchase. Don't
+                    miss out on this exclusive offer! Order now to save on your delicious meal.
+                </p>
+                <div class="col-lg-10 reservation">
+                    <form action="">
+                        <div class="row gx-2 gy-1">
+                            <div class="col-md-3 col-6">
+                                <input type="text" name="name" class="name" placeholder="Person" required>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <input type="date" name="date" class="date" placeholder="Reserved date" required>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <input type="time" name="time" class="time" min="09:00" max="24:00" required>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <button type="submit">
+                                    Book a table
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- End Table Reservation Section  -->
+    <script src="assets/js/libs/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
