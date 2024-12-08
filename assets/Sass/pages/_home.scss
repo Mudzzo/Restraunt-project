@@ -1,0 +1,100 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+    }
+}
+
+.latest-articles{
+    padding-block: 6em;
+    .main-title{
+        text-align: center;
+        h3{
+            @include font-primary-400;
+            font-size: 1.375rem;
+            color: $secondary-color;
+            margin-bottom: 0;
+        }
+        h2{
+            @include font-primary-400;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+    .article-one{
+        background-image: url("../images/articles-img-1.jpg");
+    }
+    .article-two{
+        background-image: url("../images/articles-img-2.jpg");
+    }
+    .article-three{
+        background-image: url("../images/articles-img-3.jpg");
+    }
+    .article-four{
+        background-image: url("../images/articles-img-4.jpg");
+        
+    }
+    .article-five{
+        background-image: url("../images/articles-img-5.jpg");
+        
+    }
+    .article-six{
+        background-image: url("../images/articles-img-6.jpg");
+        
+    }
+
+    .article{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(94, 93, 93, 0.664);
+        background-blend-mode: multiply;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .article-box{
+        display: flex;
+        padding: 1.25rem 1.5rem;
+        justify-content: end;
+        align-items: start;
+        flex-direction: column;
+        height: 25rem;
+        color: $quaternary-color;
+
+        .article-tag{
+            color: $primary-color;
+            background-color: $quaternary-color;
+            padding: 0.4rem 1rem 0.2rem 1rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .article-tag:hover{
+            color: $text-hover-color;
+            cursor: pointer;
+        }
+        h4{
+            font-family: "DM sans", sans-serif;
+            font-size: 1.2rem;
+            margin-top: 0.3rem;
+            color: $quaternary-color;
+        }
+        .article-title{
+            h3{
+                @include font-primary-400;
+                font-size: 1.3rem;
+                color: $quaternary-color;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+}
