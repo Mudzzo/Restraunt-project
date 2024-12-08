@@ -1,0 +1,27 @@
+html {
+  // (10px / 16) * 100 = 62.5%
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: $default-font-size;
+
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 130rem;
+  margin-inline: auto;
+  padding: 0 2rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-light;
+}

@@ -1,2 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap");
+@font-face {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/syne/v22/8vIH7w4qzmVxm2NL9Hz_.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
 
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/syne/v22/8vIH7w4qzmVxm2NL9Hz_.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.video-container iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.latest-articles {
+  padding-block: 6em;
+}
+.latest-articles .main-title {
+  text-align: center;
+}
+.latest-articles .main-title h3 {
+  color: #000000;
+  font-family: "Syne", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.375rem;
+  color: #B28E6A;
+  margin-bottom: 0;
+}
+.latest-articles .main-title h2 {
+  color: #000000;
+  font-family: "Syne", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.latest-articles .article-one {
+  background-image: url("../images/articles-img-1.jpg");
+}
+.latest-articles .article-two {
+  background-image: url("../images/articles-img-2.jpg");
+}
+.latest-articles .article-three {
+  background-image: url("../images/articles-img-3.jpg");
+}
+.latest-articles .article-four {
+  background-image: url("../images/articles-img-4.jpg");
+}
+.latest-articles .article-five {
+  background-image: url("../images/articles-img-5.jpg");
+}
+.latest-articles .article-six {
+  background-image: url("../images/articles-img-6.jpg");
+}
+.latest-articles .article {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(94, 93, 93, 0.664);
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-radius: 10px;
+}
+.latest-articles .article-box {
+  display: flex;
+  padding: 1.25rem 1.5rem;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  height: 25rem;
+  color: #ffffff;
+}
+.latest-articles .article-box .article-tag {
+  color: #534930;
+  background-color: #ffffff;
+  padding: 0.4rem 1rem 0.2rem 1rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.latest-articles .article-box .article-tag:hover {
+  color: #B28E6A;
+  cursor: pointer;
+}
+.latest-articles .article-box h4 {
+  font-family: "DM sans", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  color: #ffffff;
+}
+.latest-articles .article-box .article-title h3 {
+  color: #000000;
+  font-family: "Syne", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.baner-header {
+  margin-top: 2rem;
+}
+.baner-header .food-experinse .hero .hero-Heading {
+  background-color: #534930;
+  color: white;
+  padding-left: 12rem;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis .sub-content {
+  margin-top: 2.9rem;
+  margin-left: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis p {
+  font-family: "dm sans", sans-serif;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis h1 {
+  font-size: 3.1rem;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis .order-Now a {
+  color: white;
+  margin-left: 1rem;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis .order-Now i {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  background-color: white;
+  padding: 1rem;
+  width: 3rem;
+  color: #B28E6A;
+  border-radius: 50%;
+  margin: 0;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis .order-Now .primary-btn {
+  position: relative;
+  border-radius: 2rem;
+  padding: 0.9rem;
+  width: 12rem;
+  outline: none;
+  border: none;
+  background-color: #B28E6A;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+.baner-header .food-experinse .hero .hero-Heading .hero-Detalis .arrowVector {
+  width: 11rem;
+  margin-left: 3rem;
+}
+@media (max-width: 1200px) {
+  .baner-header .food-experinse .hero .hero-Heading {
+    font-size: 1rem;
+    padding-left: 3rem;
+    text-align: center;
+    height: 38rem;
+    width: 100%;
+  }
+  .baner-header .food-experinse .hero .hero-Heading .hero-content {
+    text-align: center;
+    /* لتوسيط النص أيضًا */
+  }
+  .baner-header .food-experinse .hero .hero-Heading .arrowVector {
+    display: none;
+  }
+}
+.baner-header .food-experinse .hero .hero-baner {
+  background: linear-gradient(to right, #534930 50%, transparent 50%);
+}
+.baner-header .food-experinse .hero .hero-baner img {
+  width: 28rem;
+  height: 28rem;
+  animation: rotateDish 60s linear infinite;
+}
+@keyframes rotateDish {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1200px) {
+  .baner-header .food-experinse .hero .hero-baner {
+    transition: 1s ease-in-out all;
+    background: transparent;
+    position: absolute;
+    top: 100%;
+    /* يتحرك الطبق نحو الأسفل */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* لجعل الطبق في المنتصف تمامًا */
+  }
+  .baner-header .food-experinse .hero .hero-baner img {
+    width: 20rem;
+    height: 20rem;
+    animation: rotateDish 60s linear infinite;
+  }
+  .baner-header .food-experinse .hero .hero-baner .hero-content {
+    text-align: center;
+    /* لتوسيط النص أيضًا */
+  }
+}
+.baner-header .sochila {
+  margin-top: 5rem;
+  padding-left: 2rem;
+}
+.baner-header .sochila img {
+  display: block;
+  margin-bottom: 4rem;
+}
+@media (max-width: 992px) {
+  .baner-header .sochila {
+    display: none;
+  }
+}
+.baner-header .dot-vector-one {
+  position: absolute;
+  top: 5rem;
+  left: 6rem;
+}
+.baner-header .dot-vector-two {
+  position: absolute;
+  bottom: 4rem;
+  left: 10rem;
+}
+.baner-header .dot-vector-three {
+  position: absolute;
+  bottom: 8rem;
+  left: 32rem;
+}
+.baner-header .dot-vector-four {
+  position: absolute;
+  bottom: 24rem;
+  left: 32rem;
+}
+@media (max-width: 992px) {
+  .baner-header .dot-vector-one,
+  .baner-header .dot-vector-two,
+  .baner-header .dot-vector-three,
+  .baner-header .dot-vector-four {
+    display: none;
+  }
+}
+.Features-Section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #F7F7F7;
+  border-radius: 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  margin-top: 7rem;
+}
+.Features-Section .Feature {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.Features-Section .Feature .icon img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+.Features-Section .Feature .content h3 {
+  margin-block: 0.5rem;
+}
+.Features-Section .Feature .content span {
+  width: min(100%, 1rem);
+}
+.Features-Section .Feature .line {
+  border-right: 2px solid #B28E6A;
+  height: 4rem;
+}
+.Features-Section .WatermarkFood {
+  position: absolute;
+  bottom: 50%; /* اضبط حسب المكان اللي تريده */
+  left: 50%; /* اضبط حسب المكان اللي تريده */
+  transform: translate(-50%, 50%); /* لتوسيط العلامة المائية بدقة */
+  opacity: 0.2; /* تخفيف العلامة المائية */
+  z-index: -1; /* خلف المحتوى */
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Features-Section .WatermarkFood img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.baners-Section {
+  position: relative;
+  margin-top: 10rem;
+}
+.baners-Section .FirstBaner, .baners-Section .secondBaner {
+  padding: 0;
+}
+.baners-Section .FirstBaner .baner-content, .baners-Section .secondBaner .baner-content {
+  padding: 4.2rem;
+  background-color: #F7F7F7;
+}
+.baners-Section .FirstBaner .baner-info, .baners-Section .secondBaner .baner-info {
+  font-weight: bold;
+}
+.baners-Section .WatermarkFood {
+  position: absolute;
+  top: -9rem;
+  left: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.baners-Section .WatermarkFood img {
+  width: 8rem;
+  height: 8rem;
+}/*# sourceMappingURL=main.css.map */

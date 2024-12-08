@@ -1,3 +1,25 @@
+.heading__primary {
+    font-size: 5.2rem;
+    font-weight: 500;
+    color: #534930;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  section.blog-bg {
+    background-color: #faf4ed;
+    font-family: "Syne", sans-serif;
+    margin-bottom: 6rem;
+    padding-bottom: 3rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 2rem;
+    background-color: #b28e6a;
+    color: #f7f7f7;
+    padding: 0.6rem 2.6rem;
+  }
+
 .testimonial-container {
     display: flex;
     height: 100%;

@@ -1,0 +1,77 @@
+.contact-section {
+  padding-bottom: 8.4rem;
+  overflow: hidden;
+
+  .header-page {
+    padding: 9.6rem 0;
+    margin-bottom: 6.4rem;
+    background-color: $color-tertiary;
+  }
+
+  .contact-info {
+    padding-block: 4.2rem;
+    background-color: $color-white;
+    transform: translateY(-6rem);
+    border-radius: 0.6rem;
+
+    position: relative;
+    z-index: 999;
+
+    @media screen and (max-width: 62em) {
+      margin-inline: 3.6rem;
+    }
+
+    &__item {
+      padding-inline: 4.6rem;
+      margin-bottom: 2.6rem;
+
+      &:not(:last-child) {
+        border-right: 2px solid $color-secondary-gray;
+      }
+
+      @media screen and (max-width: 62em) {
+        &:nth-child(2) {
+          border: none;
+        }
+      }
+
+      @media screen and (max-width: 49em) {
+        &:nth-child(1) {
+          border: none;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 2px solid $color-secondary-gray;
+        }
+      }
+    }
+
+    &__icon {
+      width: 4.4rem;
+      font-size: 2rem;
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 1.2rem;
+      margin-bottom: 3rem;
+      border-radius: 50%;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+
+      @media screen and (max-width: 49em) {
+        font-size: 2rem;
+      }
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      color: $color-secondary-gray;
+      line-height: 1.6;
+
+      @media screen and (max-width: 49em) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

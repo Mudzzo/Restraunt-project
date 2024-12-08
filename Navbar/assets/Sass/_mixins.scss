@@ -1,0 +1,22 @@
+@import './variables';
+@import './fonts';
+
+@mixin bg-color{
+    background-color: $bg-color;
+}
+
+@mixin font-primary-500{
+    font-family: $font-primary !important;
+    font-weight: 500 !important;
+}
+
+@mixin font-secondary-500{
+    font-family: $font-secondary ;
+    font-weight: 500 ;
+}
+
+@mixin d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

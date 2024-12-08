@@ -1,0 +1,27 @@
+.swiper {
+  width: 100%;
+  padding-block: 2.4rem;
+
+  &-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  &-slide {
+    display: flex;
+    width: auto;
+    padding-inline: 4rem;
+  }
+
+  &-logo {
+    max-width: 18rem;
+    height: auto;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+}

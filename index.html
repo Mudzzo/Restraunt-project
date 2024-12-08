@@ -4,63 +4,810 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resturants</title>
+    <title>Kafika Restraunts</title>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/Css/libs/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link rel="stylesheet" href="assets/Css/libs/all.min.css"> -->
     <link rel="stylesheet" href="assets/Css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/Sass/main.css">
+    <link rel="stylesheet" href="assets/Css/map.css">
+    <link rel="stylesheet" href="./assets/Css/nav-footer.css">
+    <link rel="stylesheet" href="assets/Css/Menu.css">
+    <link rel="stylesheet" href="assets/Css/reservation.css">
+    <link rel="stylesheet" href="assets/Css/testimoial.css">
+    <link rel="stylesheet" href="assets/Css/main.css">
+    
 
 </head>
 
 <body>
-    <!-- Start Table Reservation Section  -->
-    <section class="table-reservation position-relative">
-        <div class="container">
-            <img src="assets/images/plate-icon-07.svg" alt="plate-icon">
-            <div class="order d-flex align-items-center justify-content-center flex-column">
-                <h6>
-                    Place Your Order Online
-                </h6>
-                <h3>
-                    Enjoy a 10% Discount on Your First Order
-                </h3>
-                <p>
-                    Place your meal order online today and enjoy a special 10% discount on your first purchase. Don't
-                    miss out on this exclusive offer! Order now to save on your delicious meal.
-                </p>
-                <div class="col-lg-10 reservation">
-                    <form action="">
-                        <div class="row gx-2 gy-1">
-                            <div class="col-md-3 col-6">
-                                <input type="text" name="name" class="name" placeholder="Person" required>
-                            </div>
-                            <div class="col-md-3 col-6">
-                                <input type="date" name="date" class="date" placeholder="Reserved date" required>
-                            </div>
-                            <div class="col-md-3 col-6">
-                                <input type="time" name="time" class="time" min="09:00" max="24:00" required>
-                            </div>
-                            <div class="col-md-3 col-6">
-                                <button type="submit">
-                                    Book a table
-                                </button>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-color">
+          <div
+            class="container-fluid d-flex justify-content-between aligin-items-center"
+          >
+            <a class="navbar-brand logo-container">
+              <img src="./assets/images/the-cafika-logos.png" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html" aria-current="page">
+                    Home
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      width="16"
+                      height="16"
+                    >
+                      <path
+                        d="M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./About Us/About_us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Services/Service_page.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Menu/Menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contact Us/Contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Blog/Blog.html">Blog</a>
+                </li>
+              </ul>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- section 1 -->
+    <section class="baner-header position-relative m-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="food-experinse col-lg-11 col-sm-12 p-0">
+                    <div class="hero d-flex">
+                        <div class="hero-Heading">
+                            <div class="hero-Detalis">
+                                <p class="sub-content"> 
+                                    <img src="./assets/Icons/discount-vector.png" alt="">
+                                    10% Discount For 2 Order
+                                </p>
+                                <h1>Enjoy The Delicious <span style="color: #B28E6A;">Food  </span>Experience</h1>
+                                <p>Indulge in the delightful culinary journey of our menu offerings, promising anunforgettable experience for your taste buds.</p>
+                                <div class="order-Now" style="display: inline;">
+                                    <button class="primary-btn"><a href="">
+                                        <span> <i class="fa fa-angle-right" aria-hidden="true"></i> orderNow</span>
+                                    </a></button>
+                                    <a href="">
+                                        <img src="./assets/picture/play-btn-vector.png" alt="">
+                                    </a>
+                                </div>
+                                <img src="./assets/Icons/vector-arrow.png" class="arrowVector" alt="">
                             </div>
                         </div>
-                    </form>
+                        <div class="hero-baner">
+                            <img src="./assets/picture/plateSalate.png" alt="">
+                        </div>
+                    </div>
+                    <img src="./assets/Icons/dot-vector.png" alt="" class="dot-vector-one">
+                    <img src="./assets/Icons/dot-large-vector.png" alt="" class="dot-vector-two">
+                    <img src="./assets/Icons/dot-vector.png" alt="" class="dot-vector-three">
+                    <img src="./assets/Icons/dot-large-vector.png" alt="" class="dot-vector-four">
+                </div>
+                <div class="sochila col-lg-1">
+                    <img src="./assets/Icons/sochial/facebook-icon.png" alt="">
+                    <img src="./assets/Icons/sochial/google-icon.png" alt="">
+                    <img src="./assets/Icons/sochial/instagram-icon.png" alt="">
+                    <img src="./assets/Icons/sochial/twitter-icon.png" alt="">
                 </div>
             </div>
-            
         </div>
     </section>
-    <!-- End Table Reservation Section  -->
+    <!-- End section 1 -->
+    <div class="container MainPageSection2">
+        <div class="row Features-Section">
+            <div class="Feature col-lg-4 col-md-6 col-sm-12">
+                <div class="icon">
+                    <img src="./assets/Icons/FastestDilevery.svg" alt="">
+                </div>
+                <div class="content">
+                    <h5>QualityFood</h5>
+                    <span class="text-muted">Height quality ingerdiants ensure the best taste and satation</span>
+                </div>
+                <span class="line"></span>
+            </div>
+            <div class="Feature col-lg-4 col-md-6 col-sm-12">
+                <div class="icon">
+                    <img src="./assets/Icons/FreshFood.svg" alt="">
+                </div>
+                <div class="content">
+                    <h5>fastest Delelviry</h5>
+                    <span class="text-muted">Height quality ingerdiants ensure the best taste and satation</span>
+                </div>
+                <span class="line"></span>
+            </div>
+            <div class="Feature col-lg-4 col-md-12 col-sm-12">
+                <div class="icon">
+                    <img src="./assets/Icons/QualityFood.svg" alt="">
+                </div>
+                <div class="content">
+                    <h5>fresh Food</h5>
+                    <span class="text-muted">Height quality ingerdiants ensure the best taste and satation</span>
+                </div>
+            </div>
+            <div class="WatermarkFood">
+                <img src="./assets/Icons/foodIcon.png" alt="">
+            </div>
+        </div>
+        <div class="row baners-Section">
+            <div class="col-lg-6 FirstBaner col-md-12">
+                <div class="baner-content">
+                    <h5>panner bater masla</h5>
+                    <p>paneer (indian cottage cheese) cooked ina kiscious, creamy
+                        tomato-based gravy It's flavtired with aromatic apicne like garam
+                        mapala, cumin and coriander, and Finished with a touch of butter for
+                        richness and flavor</p>
+                    <a href="" class="baner-info">learn More
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="baner-img">
+                    <img src="./assets/picture/Capture.PNG" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 secondBaner col-md-12">
+                <div class="baner-img">
+                    <img src="./assets/picture/pizaSlice.PNG" class="img-fluid" alt="">
+                </div>
+                <div class="baner-content">
+                    <h5>panner bater masla</h5>
+                    <p>featuring tender cabbage and viorant green pass sautned with
+                        womatic apicea. This nutritious and flavorful vegetarian option im
+                        perfect for theos seeking a wholesome meal bursting with trechnens
+                        anos tiate Ergoy it as a standalone ish or pair it with your favorire
+                        pocompariments for a satisfying dining experience that will leave
+                        you craving for more</p>
+                </div>
+                
+            </div>
+            <div class="WatermarkFood">
+                <img src="./assets/Icons/foodIcon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- menu section -->
+    <section class="mt-5 pt-5">
+    <div class="main-title-two position-relative aos-init aos-animate">
+        <h3>Our Popular Foods </h3>
+        <img src="assets/images/Home/MenuFoodSection/home-2-title-vector.png" alt="">
+        <h2>Top Food Menu Selection</h2>
+        </div>
+    
+            <!-- portfolio -->
+            <section id="portfolio" class="portfolio">
+            <div class="container  py-5">
+            
+    
+            <div class="portfolio-area  my-5">
+                <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active btn  " id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All Categories</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Sandwiches-tab  " data-bs-toggle="pill" data-bs-target="#pills-Sandwiches" type="button" role="tab" aria-controls="pills-Sandwiches" aria-selected="false">Sandwiches</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Snack-tab  " data-bs-toggle="pill" data-bs-target="#pills-Snack" type="button" role="tab" aria-controls="pills-Snack" aria-selected="false">Snack foods</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Fast-tab  " data-bs-toggle="pill" data-bs-target="#pills-Fast" type="button" role="tab" aria-controls="pills-Fast" aria-selected="false">Fast food</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Noodles-tab  " data-bs-toggle="pill" data-bs-target="#pills-Noodles" type="button" role="tab" aria-controls="pills-Noodles" aria-selected="false">Noodles</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Snack-tab  " data-bs-toggle="pill" data-bs-target="#pills-Snack" type="button" role="tab" aria-controls="pills-Snack" aria-selected="false">Snack foods</button>
+                </li>
+                </ul>
+    
+                <div class="tab-content " id="pills-tabContent">
+                <div class="tab-pane fade show active " id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab">
+                    <div class="row isotope-container   aos-init aos-animate position-relative" data-aos-delay="200">
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="offer-lable">
+                            <span>20% Off</span>
+                        </div>
+                        
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/fresh-healthy-masala-pasta-2.png" alt="fresh">
+                        </div>
+    
+                        <div class="item-detail text-center">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Fresh & Healthy Masala Pasta</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/Contact.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/flower-vegetable-dish-parcel-2.png" alt="vegetable">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Flower Vegetable Dish & Parcel</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/potato-vegetable-dish-parcel-2.png" alt="potato">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Potato Vegetable Dish & Parcel</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/fresh-healthy-masala-salad-2.png" alt="salad">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Fresh & Healthy Masala Pasta</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/dal-tadka-yellow-indian-lentils-2.png" alt="tadka">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Dal Tadka Yellow Indian Lentils</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/palak-paneer-saag-paneer-2.png" alt="tadka">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Sautéed Spinach and Potatoes</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/palak-paneer-saag-paneer-2.png" alt="tadka">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Palak Paneer Saag Paneer</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/dal-tadka-yellow-indian-lentils-2.png" alt="tadka">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Dal Tadka Yellow Indian Lentils</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-6 portfolio-item overflow-hidden mb-4" >
+                        <div class="item-box-two d-flex position-relative overflow-hidden">
+                        <div class="food-item">
+                            <img src="./assets/images/Menu/flower-vegetable-dish-parcel-2.png" alt="vegetable">
+                        </div>
+    
+                        <div class="item-detail">
+                            <p>4.5   <i class="fa-solid fa-star"></i> </p>
+                        
+                            <h3>Flower Vegetable Dish & Parcel</h3>
+                            <div class="d-flex price justify-content-between align-items-center">
+                            <h4>$20.50</h4>
+                            <div class="plus-bg">
+                                <a href="./Contact Us/index.html">
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                
+                
+                </div>
+    
+                <div class="viwe-more-btn aos-init aos-animate ">
+                <a href="./Menu/Menu.html" class="primary-btn">
+                    <span>More Load</span>
+                </a>
+                </div>
+    
+            </div>
+                </div>
+        </section>
+    </section>
+
+    <section class="table-reservation position-relative" data-aos="fade-up">
+    <div class="container">
+        <img src="assets/images/plate-icon-07.svg" alt="plate-icon" data-aos="zoom-in">
+        <div class="order d-flex align-items-center justify-content-center flex-column" data-aos="fade-right">
+            <h6 data-aos="fade-down">
+                Place Your Order Online
+            </h6>
+            <h3 data-aos="fade-up">
+                Enjoy a 10% Discount on Your First Order
+            </h3>
+            <p data-aos="fade-left">
+                Place your meal order online today and enjoy a special 10% discount on your first purchase. Don't
+                miss out on this exclusive offer! Order now to save on your delicious meal.
+            </p>
+            <div class="col-lg-10 reservation" data-aos="flip-left">
+                <form action="">
+                    <div class="row gx-2 gy-1">
+                        <div class="col-md-3 col-6" data-aos="zoom-in">
+                            <input type="text" name="name" class="name" placeholder="Person" required>
+                        </div>
+                        <div class="col-md-3 col-6" data-aos="zoom-in">
+                            <input type="date" name="date" class="date" placeholder="Reserved date" required>
+                        </div>
+                        <div class="col-md-3 col-6" data-aos="zoom-in">
+                            <input type="time" name="time" class="time" min="09:00" max="24:00" required>
+                        </div>
+                        <div class="col-md-3 col-6" data-aos="zoom-in">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    </section>
+
+    <div class="testimonial-container my-5 mb-5">
+        <div class="testimonial-content">
+            <h1>Testimonial</h1>
+            <div class="title-line"></div>
+            <h3>Restaurant Food</h3>
+            <img class="quote-icon" src="./assets/images/quote-icon-2.svg">
+            <p>
+                Place your meal order online today and enjoy a special 10% discount on your first
+                purchase. Don't miss out on this exclusive offer! Order now to save on your delicious meal.
+            </p>
+            <span class="testimonial-author">• &ThinSpace; &ThinSpace; Brooklyn Simmons</span>
+        </div>
+        <div class="testimonial-image">
+            <img src="./assets/images/testimonial-image.jpg" alt="Testimonial Image">
+        </div>
+        <div class="testimonial-navigation">
+            <button class="nav-btn nav-prev">
+                <img src="./assets/images/privous-arrowpng.png" alt="Previous">
+            </button>
+            <button class="nav-btn nav-next">
+                <img src="./assets/images/next-arrow.png" alt="Next">
+            </button>
+        </div>
+    </div>
+    <!-- Start Restaurant Video Section -->
+    <section class="video-section">
+        <div class="video-container w-100">
+            <iframe src="https://www.youtube.com/embed/M5_6-ZqqjK0" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
+                allowfullscreen class="w-100">
+            </iframe>
+        </div>
+
+    </section>
+    <!-- End Restaurant Video Section -->
+
+    <!-- Start Latest Articles Section -->
+    <section class="latest-articles">
+        <div class="container">
+            <div class="main-title" data-aos="fade-up" data-aos-duration="1000">
+                <h3>
+                    Latest Article's
+                </h3>
+                <img src="assets/images/title-border.png" alt="title border">
+                <h2>
+                    Helpful Advice and Handy Tips
+                </h2>
+            </div>
+            <div class="row gy-3 gx-4">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="article-one article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Breakfast
+                                </span>
+                                <h4>
+                                    20 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="article-two article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Dessert
+                                </span>
+                                <h4>
+                                    25 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="article-three article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Lunch
+                                </span>
+                                <h4>
+                                    28 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-duration="1500">
+                    <div class="article-four article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Lunch
+                                </span>
+                                <h4>
+                                    28 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-right" data-aos-duration="1500">
+                    <div class="article-five article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Lunch
+                                </span>
+                                <h4>
+                                    28 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="article-six article">
+                        <div class="article-box">
+                            <div class="d-flex">
+                                <span class="article-tag">
+                                    Breakfast
+                                </span>
+                                <h4>
+                                    20 April
+                                </h4>
+                            </div>
+                            <div class="article-title">
+                                <h3>
+                                    Delicious Cuisine: Savor Our Mouthwatering Culinary Creations!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container mt-5">
+        <div class="map-overlay"></div>
+        <iframe
+          class="hidden"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.921127789743!2d-122.08424968424696!3d37.42206597982402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24b4d14efb5%3A0x5bb68c02ff9edc8c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614113777891!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    <!-- End Latest Articles Section -->
+    <footer class="footer">
+        <div class="container-md">
+          <div class="footer-link">
+            <div class="row justify-content-between">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-col">
+                  <div class="footer-logo mb-4">
+                    <a href="index.html">
+                      <img
+                        src="./assets/images/the-cafika-logos.png"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+  
+                  <p class="mb-4">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has...
+                  </p>
+  
+                  <div class="social-icon d-flex align-items-center">
+                    <div class="color-change">
+                      <a href="https://www.facebook.com/" target="_blank" class="d-flex align-items-center justify-content-center">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </div>
+  
+                    <a href="https://www.instagram.com/" target="_blank" class="d-flex align-items-center justify-content-center">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+  
+                    <a href="https://x.com/?lang=en" target="_blank" class="d-flex align-items-center justify-content-center"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+  
+                    <a href="https://in.linkedin.com/" target="_blank" class="d-flex align-items-center justify-content-center"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-col">
+                  <div class="footer-title position-relative">
+                    <h2>Menu</h2>
+                  </div>
+  
+                  <div class="footer-menu">
+                    <a href="index.html">Home</a>
+  
+                    <a href="about-us.html">About Us</a>
+  
+                    <a href="reservation.html">Reservation</a>
+  
+                    <a href="blog.html">Blogs</a>
+  
+                    <a href="contact-us.html">Contact</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-col">
+                  <div class="footer-title position-relative">
+                    <h2>Services</h2>
+                  </div>
+  
+                  <div class="footer-menu">
+                    <a href="services.html">Services 01</a>
+  
+                    <a href="services.html">Services 02</a>
+  
+                    <a href="services.html">Services 03</a>
+  
+                    <a href="services.html">Services 04</a>
+  
+                    <a href="services.html">Services 05</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer-col">
+                  <div class="footer-title position-relative">
+                    <h2>Find Us</h2>
+                  </div>
+  
+                  <div class="footer-contact">
+                    <ul class="d-flex align-items-center">
+                      <li><i class="fas fa-phone-alt"></i></li>
+  
+                      <li><a href="tel:911234567890">+91 12 34 56 78 90</a></li>
+                    </ul>
+  
+                    <ul class="d-flex align-items-center">
+                      <li><i class="fas fa-at"></i></li>
+  
+                      <li>
+                        <a href="mailto:info@thekafika.com">info@thekafika.com</a>
+                      </li>
+                    </ul>
+  
+                    <ul class="d-flex m-0">
+                      <li><i class="fas fa-map-marker-alt"></i></li>
+  
+                      <li>
+                        <a href="https://maps.google.com/" target="_blank"
+                          >3891 Ranchview Dr. Richardson, California 62639</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <hr/>
+  
+          <div class="footer-copyright">
+            <div class="bottom-text d-flex justify-content-center">
+              <p>© Copyright 2024 - thekafika - All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
     <script src="assets/js/libs/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+        // Initialize AOS
         AOS.init();
     </script>
 </body>

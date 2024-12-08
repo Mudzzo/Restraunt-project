@@ -1,0 +1,9 @@
+@import './fonts';
+@import './general';
+@import './mixins';
+@import './variables';
+
+body{
+    font-size: 16px;
+    @include font-primary-500;
+}

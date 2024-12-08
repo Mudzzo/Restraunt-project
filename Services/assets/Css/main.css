@@ -1,13 +1,38 @@
+.heading__primary {
+    font-size: 5.2rem;
+    font-weight: 500;
+    color: #534930;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  section.blog-bg {
+    background-color: #faf4ed;
+    font-family: "Syne", sans-serif;
+    margin-bottom: 6rem;
+    padding-bottom: 3rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 2rem;
+    background-color: #b28e6a;
+    color: #f7f7f7;
+    padding: 0.6rem 2.6rem;
+  }
+
 .discount-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: fit-content;
     justify-content: left;
     gap: 20px;
     position: relative;
     background-color: #fff;
     margin-left: 100px;
     margin-right: 100px;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
 }
 
 .card-image-left {
@@ -16,7 +41,7 @@
     overflow: hidden;
     border-radius: 5px;
     position: relative;
-
+    right: 3rem;
 }
 
 .card-image-right {
@@ -25,7 +50,7 @@
     overflow: hidden;
     border-radius: 5px;
     position: relative;
-    padding-bottom: 335px;
+    bottom: 200px;
     margin-right: 20px;
 }
 
