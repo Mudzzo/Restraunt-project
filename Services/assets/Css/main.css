@@ -101,14 +101,14 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 55.8px;
-    font-family: "DMSans-Bold";
+    font-family: "solid-900-ttf";
 }
 
 .discount-details h3 span {
     color: #c89e72;
     font-weight: bold;
     text-align: left;
-    font-family: "DMSans-Bold";
+    font-family: "solid-900-ttf";
 }
 
 .discount-details .description {
@@ -117,7 +117,7 @@
     line-height: 30px;
     margin-bottom: 35px;
     display: block;
-    font-family: "DMSans-Light";
+    font-family: "brands-400-woff2";
 }
 
 .title {
@@ -128,7 +128,7 @@
     line-height: 20px;
     color: #B28E6A;
     margin: 0 0 10px 0;
-    font-family: "DMSans-Bold";
+    font-family: "solid-900-ttf";
 }
 .toggle-book {
     width: 190px;
@@ -163,7 +163,7 @@
     left: 53%;
     transform: translateX(-50%);
     transition: all 0.3s ease;
-    font-family: "DMSans-Bold";
+    font-family: "solid-900-ttf";
 }
 .toggle-label::before {
     content: '\2192';
@@ -329,6 +329,15 @@
 }
 
 @media (max-width: 1024px) {
+    .testimonial-content p {
+        font-size: 18px;
+    }
+    .testimonial-content h1 {
+        font-size: 1.6em;
+    }
+    .testimonial-content h3 {
+        font-size: 1.3rem;
+    }
     .testimonial-container {
         flex-direction: column; 
         margin-top: 29em;
@@ -336,6 +345,9 @@
         margin-left: 83px;
         
    }
+   /* .testimonial-content{
+    font-size: 1.2em;
+   } */
 
     .discount-section {
         flex-wrap: nowrap;
@@ -385,6 +397,9 @@
     
 }
 @media (max-width: 768px) {
+    .testimonial-content p {
+        font-size: 1rem;
+    }
     .testimonial-container {
          flex-direction: column;
          margin-top: 29em;
@@ -398,6 +413,7 @@
     .testimonial-content {
         padding: 20px;
         text-align: center;
+        font-size: 24px;
       
     }
 
@@ -441,10 +457,12 @@
 
     .discount-details h3 {
         font-size: 32px;
+        font-family: 'solid-900-ttf';
     }
 
     .discount-details .description {
         font-size: 16px;
+        font-family: 'brands-400-ttf';
     }
 }
 @media (max-width: 552px) {
@@ -466,6 +484,7 @@
 
     .testimonial-content p {
         font-size: 14px;
+        font-family: 'brands-400-ttf';
     }
 
     .testimonial-content .quote {
@@ -474,6 +493,7 @@
 
     .testimonial-content .author {
         font-size: 12px;
+        font-family: 'solid-900-ttf';
     }
     .discount-section {
         flex-wrap: wrap;
@@ -518,7 +538,7 @@
 
     .discount-details p {
         font-size: 14px;
-        font-family: 'DMSans-Light';
+        font-family: 'solid-900-ttf';
     }
 
     .book-btn {
@@ -633,19 +653,19 @@
     }
 }
 
+
 @font-face {
-    font-family: 'DMSans-Bold';
-    src: url('../font/DMSans_18pt-Bold.ttf') format('truetype'); 
-    font-family: 'DMSans-Italic';
-    src: url('../font/DMSans_18pt-Italic.ttf') format('truetype'); 
-    font-family: 'DMSans-Light';
-    src: url('../font/DMSans_18pt-Light.ttf') format('truetype'); 
-    font-family: 'DMSans-Medium';
-    src: url('../font/DMSans_18pt-Medium.ttf') format('truetype'); 
-    font-family: 'DMSans-SemiBold';
-    src: url('../font/DMSans_18pt-SemiBold.ttf') format('truetype'); 
-    font-family: 'DMSans-Regular';
-    src: url('../font/DMSans_18pt-Regular.ttf') format('truetype'); 
+    font-family: 'brands-400-ttf';
+    src: url('../webfonts/fa-brands-400.ttf') format('truetype'); 
+    font-family: 'brands-400-woff2';
+    src: url('../webfonts/fa-brands-400.woff2') format('truetype'); 
+    font-family: 'regular-400-ttf';
+    src: url('../webfonts/fa-regular-400.ttf') format('truetype'); 
+    font-family: 'DMSans-Medium-woff2';
+    src: url('../webfonts/fa-solid-900.woff2') format('truetype'); 
+    font-family: 'solid-900-ttf';
+    src: url('../webfonts/fa-solid-900.ttf') format('truetype'); 
+    font-family: 'regular-400-woff2';
+    src: url('../webfonts/fa-regular-400.woff2') format('truetype'); 
     
 }
-
