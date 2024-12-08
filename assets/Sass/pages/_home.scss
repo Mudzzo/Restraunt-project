@@ -1,0 +1,53 @@
+.table-reservation{
+    padding-top: 10rem;
+    img{
+        position: absolute;
+        top: 12rem;
+        left: 3rem;
+    }
+    .order{
+        background-image: url('../images/composition-traditional-indonesian-bakso.jpg');
+        background-position: center;
+        background-size: cover;
+        background-color: gray;
+        transition: 0.3s;
+        background-blend-mode: multiply; 
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        padding: 6rem 1rem;
+        color: $quaternary-color;
+        h3, h6{
+            @include font-primary-400;
+            color: $quaternary-color;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-family: "DM Sans", sans-serif;
+            padding-inline: 3rem;
+            text-align: center;
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+        }
+        .reservation{
+            input{
+                width: 100%;
+                padding: 1.25rem 0.7rem 1.25rem 4rem;
+                border: none;
+                outline: none;
+            }
+            .name{
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                color: #212529;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+        }
+    }
+    .order:hover{
+        background-color: #808080b3;
+        background-blend-mode: multiply; 
+    }
+}
