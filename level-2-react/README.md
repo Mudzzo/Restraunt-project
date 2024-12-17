@@ -5,8 +5,8 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-link>
-cd <project-folder>
+git clone https://github.com/Mudzzo/Restraunt-project.git
+cd Restraunt-project/level-2-react
 ```
 
 ### 2. Install Dependencies
