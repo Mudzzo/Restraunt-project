@@ -10,7 +10,7 @@ import {
 
 function Social({ position }) {
   return (
-    <div className="social">
+    <div className={`social ${position === 'social--header' && 'ms-auto'}`}>
       <ul className={`social__list ${position === '' ? '' : position}`}>
         <li>
           <a

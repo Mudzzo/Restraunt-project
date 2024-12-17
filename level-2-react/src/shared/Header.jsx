@@ -8,17 +8,14 @@ function Header() {
   return (
     <header className="header">
       <Navbar expand="lg" className="bg-color">
-        <Container
-          fluid
-          className="d-flex justify-content-between align-items-center"
-        >
+        <Container fluid="xl">
           <Logo />
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse
             id="navbarNav"
             className="justify-content-evenly align-items-baseline"
           >
-            <Nav className="mb-2 mb-lg-0">
+            <Nav className="mb-2 mb-lg-0 ms-auto">
               <Nav.Item>
                 <Link className="nav-link" to="/" aria-current="page">
                   Home
