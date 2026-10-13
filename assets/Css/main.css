@@ -194,9 +194,10 @@ a {
 @media (max-width: 1200px) {
   .baner-header .food-experinse .hero .hero-Heading {
     font-size: 1rem;
-    padding-left: 3rem;
+    padding: 0 1.5rem 12rem;
+    /* leave room for the top half of the plate so it never covers the buttons */
     text-align: center;
-    height: 38rem;
+    height: auto;
     width: 100%;
   }
   .baner-header .food-experinse .hero .hero-Heading .hero-content {
@@ -205,6 +206,17 @@ a {
   }
   .baner-header .food-experinse .hero .hero-Heading .arrowVector {
     display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .MainPageSection2 .Features-Section {
+    /* space for the bottom half of the plate that hangs below the hero */
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 576px) {
+  .baner-header .food-experinse .hero .hero-Heading .hero-Detalis h1 {
+    font-size: 2.3rem;
   }
 }
 .baner-header .food-experinse .hero .hero-baner {
